@@ -1,0 +1,50 @@
+@media (max-width: 900px) {
+    .container {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container #landing {
+        width: 320px;
+        height: 250px;
+    }
+
+    .container main #logo {
+        width: 250px;
+    }
+
+    .container main {
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container main p {
+        text-align: center;
+        font-size: 18pt;
+    }
+
+    #button {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    #button a {
+        width: 190px;
+    }
+
+    #button a img {
+        margin-right: 10px;
+    }
+}

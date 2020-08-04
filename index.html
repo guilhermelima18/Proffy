@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/responsive-home.css">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
         rel="stylesheet">
@@ -13,20 +15,21 @@
     <title>Proffy | Página Inicial</title>
 </head>
 
-<body id="page-landing">
+<body>
 
     <div class="container">
+        <img id="landing" src="images/landing.svg">
 
         <main>
-            <h1>Proffy</h1>
+            <img id="logo" src="images/logo.svg" alt="Proffy">
             <p>Sua plataforma de estudos online</p>
 
             <div id="button">
-                <button><img src="images/icons/study.svg" alt="Botão estudar">Estudar</button>
-                <button><img src="images/icons/give-classes.svg" alt="Botão dar aulas">Dar aulas</button>
+                <a class="study" href="#"><img src="images/icons/study.svg" alt="Botão estudar">Estudar</a>
+                <a class="classes" href="#"><img src="images/icons/give-classes.svg" alt="Botão dar aulas">Dar aulas</a>
             </div>
-
         </main>
+
     </div>
 
 </body>
