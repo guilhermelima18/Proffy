@@ -61,7 +61,7 @@ body {
 
 .top-bar {
     background-color: var(--color-primary);
-    height: 190px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,7 +75,7 @@ body {
     font-style: italic;
     font-weight: 600;
     font-size: 30pt;
-    margin-top: 50px;
+    
 }
 
 .top-bar p {
@@ -84,17 +84,19 @@ body {
     font-family: 'Archivo', sans-serif;
     font-weight: 400;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 form {
     background-color: #FFF;
+    
     width: 70%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px auto;
+    margin: -150px auto 30px;
     border-radius: 10px;
     padding: 20px;
 }
@@ -189,11 +191,13 @@ legend {
 
 .rodape {
     width: 90%;
+    height: 110px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-top: 80px;
+    border-top: 1px dashed gray;
 }
 
 .rodape h4 {

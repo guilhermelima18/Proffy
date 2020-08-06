@@ -29,28 +29,28 @@
 
         </div>
 
-            <form action="">
+            <form action="" id="create-class">
 
                 <div id="dados">
                     <legend>Seus dados</legend>
-                    <label for="">Nome completo</label>
-                    <input type="text" name="" id="">
-                    <label for="">Link da sua foto</label>
-                    <input type="url" name="" id="" placeholder="https://">
-                    <label for="">Whatsapp</label>
-                    <input type="text" name="" id="" placeholder="(xx) xxxxx-xxxx">
-                    <label for="">Biografia</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <label for="name">Nome completo</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for=avatar>Link da sua foto</label>
+                    <input type="url" name="avatar" id="avatar" placeholder="https://" required>
+                    <label for="whatsapp">Whatsapp</label>
+                    <input type="number" name="whatsapp" id="whatsapp" placeholder="(xx) xxxxx-xxxx" required>
+                    <label for="bio">Biografia</label>
+                    <textarea name="bio" id="bio" cols="30" rows="10" required></textarea>
                 </div>
 
                 <div id="aulas">
                     <legend>Sobre a aula</legend>
-                    <label for="">Matéria</label>
-                    <select name="" id="">
+                    <label for="materia">Matéria</label>
+                    <select name="materia" id="materia" required>
                         <option value="">Selecione qual você quer ensinar</option>
                     </select>
-                    <label for="">Custo da sua hora/aula</label>
-                    <input type="text" name="" id="">
+                    <label for="custo">Custo da sua hora/aula</label>
+                    <input type="number" name="custo" id="custo" required>
                 </div>
 
                 <div id="horario">
@@ -60,15 +60,15 @@
                         <a href="#">+ Novo horário</a>
                     </nav>
 
-                    <label for="">Dia da semana</label>
-                    <select name="" id="">
+                    <label for="dia">Dia da semana</label>
+                    <select name="dia" id="dia" required>
                         <option value="">Selecione o dia</option>
                     </select>
 
-                    <label for="">Das</label>
-                    <input type="text" name="" id="horas">
-                    <label for="">Até</label>
-                    <input type="text" name="" id="horas2">
+                    <label for="horas">Das</label>
+                    <input type="number" name="horas" id="horas" required>
+                    <label for="horas2">Até</label>
+                    <input type="number" name="horas2" id="horas2" required>
 
                 </div>
 
