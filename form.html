@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
 
     <title>Proffy | Formulário de Inscrição</title>
+
+    <script src="scripts/scripts.js" defer></script>
 </head>
 
 <body>
@@ -53,25 +55,26 @@
                 <input type="number" name="custo" id="custo" required>
             </div>
 
+            <nav>
+                <legend>Horários disponíveis</legend>
+                <button type="button" id="add-time">+ Novo horário</button>
+            </nav>
 
             <div id="horario">
 
-                <nav>
-                    <legend>Horários disponíveis</legend>
-                    <button id="add-time">+ Novo horário</button>
-                </nav>
-
+                <div id="horarios">
                     <label for="weekday">Dia da semana</label>
                     <select name="weekday[]" id="weekday" required>
                         <option value="">Selecione o dia</option>
                     </select>
-                
+
                     <label for="time-from">Das</label>
                     <input type="time" name="time-from[]" required>
 
                     <label for="time_to">Até</label>
                     <input type="time" name="time_to" required>
-            
+                </div>
+
             </div>
 
             <div class="rodape">
