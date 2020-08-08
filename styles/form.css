@@ -119,25 +119,34 @@ form {
     width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 #horario nav {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-#horario nav a {
-    text-decoration: none;
-    font-size: 17pt;
+nav button#add-time {
+    font-size: 15pt;
     color: var(--color-primary);
+    background-color: #f0f0f5;
     font-weight: 600;
+    border: 0;
+    cursor: pointer;
+}
+
+nav button#add-time:hover {
+    text-decoration: underline;
 }
 
 label {
+    color: #888888;
     font-size: 15pt;
     margin-top: 30px;
     font-family: 'Archivo', sans-serif;
@@ -183,7 +192,7 @@ select {
 }
 
 legend {
-	color: #888888;
+	color: #353333;
 	font-weight: bold;
 	font-size: 22pt;
     font-family: sans-serif;

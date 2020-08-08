@@ -29,59 +29,64 @@
 
         </div>
 
-            <form action="" id="create-class">
+        <form action="" id="create-class">
 
-                <div id="dados">
-                    <legend>Seus dados</legend>
-                    <label for="name">Nome completo</label>
-                    <input type="text" name="name" id="name" required>
-                    <label for=avatar>Link da sua foto</label>
-                    <input type="url" name="avatar" id="avatar" placeholder="https://" required>
-                    <label for="whatsapp">Whatsapp</label>
-                    <input type="number" name="whatsapp" id="whatsapp" placeholder="(xx) xxxxx-xxxx" required>
-                    <label for="bio">Biografia</label>
-                    <textarea name="bio" id="bio" cols="30" rows="10" required></textarea>
-                </div>
+            <div id="dados">
+                <legend>Seus dados</legend>
+                <label for="name">Nome completo</label>
+                <input type="text" name="name" id="name" required>
+                <label for=avatar>Link da sua foto</label>
+                <input type="url" name="avatar" id="avatar" placeholder="https://" required>
+                <label for="whatsapp">Whatsapp</label>
+                <input type="number" name="whatsapp" id="whatsapp" placeholder="(xx) xxxxx-xxxx" required>
+                <label for="bio">Biografia</label>
+                <textarea name="bio" id="bio" cols="30" rows="10" required></textarea>
+            </div>
 
-                <div id="aulas">
-                    <legend>Sobre a aula</legend>
-                    <label for="materia">Matéria</label>
-                    <select name="materia" id="materia" required>
-                        <option value="">Selecione qual você quer ensinar</option>
-                    </select>
-                    <label for="custo">Custo da sua hora/aula</label>
-                    <input type="number" name="custo" id="custo" required>
-                </div>
+            <div id="aulas">
+                <legend>Sobre a aula</legend>
+                <label for="materia">Matéria</label>
+                <select name="materia" id="materia" required>
+                    <option value="">Selecione qual você quer ensinar</option>
+                </select>
+                <label for="custo">Custo da sua hora/aula</label>
+                <input type="number" name="custo" id="custo" required>
+            </div>
 
-                <div id="horario">
 
-                    <nav>
-                        <legend>Horários disponíveis</legend>
-                        <a href="#">+ Novo horário</a>
-                    </nav>
+            <div id="horario">
 
-                    <label for="dia">Dia da semana</label>
-                    <select name="dia" id="dia" required>
+                <nav>
+                    <legend>Horários disponíveis</legend>
+                    <button id="add-time">+ Novo horário</button>
+                </nav>
+
+                    <label for="weekday">Dia da semana</label>
+                    <select name="weekday[]" id="weekday" required>
                         <option value="">Selecione o dia</option>
                     </select>
+                
+                    <label for="time-from">Das</label>
+                    <input type="time" name="time-from[]" required>
 
-                    <label for="horas">Das</label>
-                    <input type="number" name="horas" id="horas" required>
-                    <label for="horas2">Até</label>
-                    <input type="number" name="horas2" id="horas2" required>
+                    <label for="time_to">Até</label>
+                    <input type="time" name="time_to" required>
+            
+            </div>
 
-                </div>
+            <div class="rodape">
 
-                <div class="rodape">
-                    <h4><img src="images/icons/warning.svg">
-                        Importante!!! <br>
-                        Preencha todos os dados
-                    </h4>
+                <h4><img src="images/icons/warning.svg" alt="Aviso importante">
+                    Importante!!! <br>
+                    Preencha todos os dados
+                </h4>
 
-                    <button type="submit">Salvar cadastro</button>
-                </div>
+                <button type="submit">Salvar cadastro</button>
 
-            </form>
+            </div>
+
+        </form>
+
 </body>
 
 </html>
