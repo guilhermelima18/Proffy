@@ -5,13 +5,43 @@ const proffys = [
         whatsapp: "014998863973",
         bio: "Entusiasta das melhores tecnologias de química avançada.",
         bio2: "Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências. Mais de 200.000 pessoas já passaram por uma das minhas explosões.",
-        materia: "Química",
+        subject: "Química",
         custo: "20,00",
         weekday: [0],
         time_from: [720],
         time_to: [1220]
     }
+
 ]
+
+const subjects = [
+    "Artes",
+    "Biologia",
+    "Ciências",
+    "Educação Física",
+    "Física",
+    "Geografia",
+    "História",
+    "Matemática",
+    "Português",
+    "Química",
+]
+
+const weekdays = [
+    "Domingo",
+    "Segunda-feira",
+    "Terça-feira",
+    "Quarta-feira",
+    "Quinta-feira",
+    "Sexta-feira",
+    "Sábado",
+]
+
+// Transformar índice de array em Nomes
+function getSubject(subjectNumber) {
+    const position = +subjectNumber - 1
+    return subjects[position]
+}
 
 const express = require('express');
 const server = express();
@@ -30,9 +60,20 @@ server.get("/", (req, res) => {
 })
 
 server.get("/study", (req, res) => {
-    return res.render("study.html", {proffys})
+    const filters = req.query
+    return res.render("study.html", {proffys, filters, subjects, weekdays})
 })
 
 server.get("/form", (req, res) => {
-    return res.render("form.html")
+    const data = req.query
+
+    const isNotEmpty = Object.keys(data).length > 0
+
+     if (isNotEmpty) {
+         data.subject = getSubject(data.subject)
+        proffys.push(data)
+        return res.redirect("/study")
+     }
+    
+    return res.render("form.html", {subjects, weekdays})
 })

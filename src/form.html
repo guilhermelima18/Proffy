@@ -42,9 +42,14 @@
 
             <div id="aulas">
                 <legend>Sobre a aula</legend>
-                <label for="materia">Matéria</label>
-                <select name="materia" id="materia" required>
-                    <option value="">Selecione qual você quer ensinar</option>
+                <label for="subject">Matéria</label>
+                <select name="subject" id="subject" required>
+                    <option value="">Selecione uma opção</option>
+                    {%for subject in subjects%}
+                        <option value="{{loop.index}}">
+                            {{subject}}
+                        </option>
+                    {%endfor%}
                 </select>
                 <label for="custo">Custo da sua hora/aula</label>
                 <input type="number" name="custo" id="custo" required>
@@ -58,8 +63,13 @@
             <div id="horario">
                 <div id="horarios">
                     <label for="weekday">Dia da semana</label>
-                    <select name="weekday[]" id="weekday" required>
+                    <select name="weekday" id="weekday" required>
                         <option value="">Selecione o dia</option>
+                        {%for days in weekdays%}
+                            <option value="{{loop.index0}}">
+                                {{days}}
+                            </option>
+                        {%endfor%}
                     </select>
 
                     <label for="time_from">Das</label>
