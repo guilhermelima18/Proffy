@@ -70,6 +70,10 @@
 
         </div>
 
+        {%if proffys == ""%}
+            <h2 class="no-results">Nenhum professor encontrado.</h2>
+        {%else%}
+
         {%for proffy in proffys%}
         <main>
 
@@ -95,6 +99,8 @@
 
         </main>
         {%endfor%}
+
+        {%endif%}
 
     </div>
 

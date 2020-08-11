@@ -311,3 +311,9 @@ main {
     color: var(--color-primary);
     font-weight: 600;
 }
+
+.no-results {
+    text-align: center;
+    margin: 150px auto;
+    font-size: 22pt;
+}
