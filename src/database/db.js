@@ -1,5 +1,5 @@
 const Database = require('sqlite-async');
-module.exports = Database.open(__dirname + '/database.sqlite').then(execute)
+module.exports = Database.open(__dirname + '/banco.sqlite').then(execute)
 
 function execute(db) {
     return db.exec(`
