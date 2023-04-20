@@ -19,7 +19,7 @@
   "homepage": "https://github.com/guilhermelima18/Proffy#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "nunjucks": "^3.2.2",
+    "nunjucks": "^3.2.4",
     "sqlite-async": "^1.1.0"
   },
   "devDependencies": {
